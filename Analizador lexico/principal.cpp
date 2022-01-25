@@ -11,7 +11,7 @@ int main(int argc, char *argv[]){
     
     Lexico lexico;
     //llamamos a la funcion entreda de lexico
-    lexico.entrada("+ 1774 * 44.12 >= ! != && , if ( ) else while \"salcedo\" int alexa { } = return ; ");
+    lexico.entrada("-1774 + -44.12 >= ! != && , if ( ) else while \"salcedo\" char alexa { } = return ; ");
     
     cout << "Resultado del Analisis Lexico" << endl << endl;
     cout << "Simbolo\t\tTipo" << endl;

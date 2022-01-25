@@ -233,8 +233,8 @@ int Lexico::sigSimbolo(){
                     //para palabras que son numeros variables o cadenas se hace un for para comprobar que tipo de palabra es
                     for (int i=0; i < longitud ; i++){ 
                          bool x = isdigit(c[i]);
-                         if(x == 0)entero = false;//si los caracteres de la palabra no son solo digitos sognifica que no es un entero
-                         if(x == 0 && c[i] != '.')reales = false;//si uno de los caracteres no es digito y no es un punto no es un real
+                         if(x == 0 && c[i] != '-'){entero = false;}//si los caracteres de la palabra no son solo digitos sognifica que no es un entero
+                         if(x == 0 && c[i] != '.' && c[i] != '-')reales = false;//si uno de los caracteres no es digito y no es un punto no es un real
                          if(x == 0 && c[i] == '\"')cadena = true;//si el caracter no es digito, ni es punto pero es comilla entonces es cadena.
                     }
                     if (entero == true){ 
@@ -341,7 +341,9 @@ int Lexico::sigSimbolo(){
 string Lexico::sigCaracter(){
      string palabra;
      //revisamos si enos encontramos al final de la cadena
-     if (terminado()) return "$";
+     if (terminado()){ 
+          return "$";
+     }
      //revisamos si hay un simbolo de $ antes del final de la cadena para terminar precipitadamente
      if(fuente[ind] == '$'){
           return "$";
@@ -373,6 +375,8 @@ void Lexico::aceptacion(int estado){
 }
 
 bool Lexico::terminado(){//fin de cadena
-     if (ind >= fuente.length())return true;
+     if (ind >= fuente.length()){
+          return true;
+     }
 }
 
