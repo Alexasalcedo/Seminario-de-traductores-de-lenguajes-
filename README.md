@@ -1,8 +1,8 @@
 # Seminario-de-traductores-de-lenguajes-2
 Nombre:Salcedo Arellano Alexa
 
-Analizador Lexico: 
-Utilice el codigo que el profesor previamente compartio como base del analizador lexico, primero lo analice para comprender como funcionaba y que era lo que hacia
-y despues procegu a hacer cambios como borrar ciertas funciones que no utilizaba, y que analizara palabra por palabra en lugar de caracter por caracte; 
-asi mismo agrague mas palabras reservadas y finalmente arregle un error que tenia el codigo original en el cual analizaba basura del sistema es decir no se detenia 
-donde terminaba la cadena que el usurio le daba.
+Analizador Léxico: 
+Utilice el código que el profesor previamente compartido como base del analizador léxico, primero lo analice para comprender como funcionaba y que era lo que hacia
+y después proseguí a hacer cambios como borrar ciertas funciones que no utilizaba, y que analizara palabra por palabra en lugar de carácter por carácter; 
+así mismo agregue más palabras reservadas y finalmente arregle un error que tenía el código original en el cual analizaba basura del sistema es decir no se detenía 
+donde terminaba la cadena que el usuario le daba.
